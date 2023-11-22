@@ -32,7 +32,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: java-app
-          path: '*.jar'
+          path: '*orneo-0.0.1-SNAPSHOT.jar'
 
   deploy:
     runs-on: ubuntu-latest

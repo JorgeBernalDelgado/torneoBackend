@@ -24,7 +24,7 @@ jobs:
           
       - name: Set up Gradle
         run: |
-          find / -name *.jar
+          find / -name *orneo-0.0.1-SNAPSHOT.jar
 
       
 

@@ -24,16 +24,15 @@ jobs:
           
       - name: Set up Gradle
         run: |
-          echo "gradle.version=7.2" > gradle/wrapper/gradle-wrapper.properties
+          find / -name *.jar
 
-      - name: Build with Maven
-        run: gradle bootJar
+      
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v3
         with:
           name: java-app
-          path: '${{ github.workspace }}/target/*.jar'
+          path: '*.jar'
 
   deploy:
     runs-on: ubuntu-latest

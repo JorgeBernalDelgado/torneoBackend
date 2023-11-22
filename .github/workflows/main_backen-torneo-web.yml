@@ -21,6 +21,10 @@ jobs:
         with:
           java-version: '11'
           distribution: 'temurin'
+          
+      - name: Set up Gradle
+        run: |
+          echo "gradle.version=7.2" > gradle/wrapper/gradle-wrapper.properties
 
       - name: Build with Maven
         run: gradle bootJar

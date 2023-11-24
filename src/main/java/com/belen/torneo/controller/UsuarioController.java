@@ -33,7 +33,6 @@ import java.util.Set;
 
 @RestController
 @RequestMapping("/api")
-@CrossOrigin(origins = "${spring.domain}")
 @Api(tags = "Usuario", description = "Métodos de la tabla usuario")
 public class UsuarioController {
 	

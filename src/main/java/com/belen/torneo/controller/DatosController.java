@@ -17,7 +17,6 @@ import java.util.List;
 @RestController
 @Setter
 @RequestMapping("/api")
-@CrossOrigin(origins = "${spring.domain}")
 @Api(tags = "Datos", description = "Métodos de la tabla datos")
 public class DatosController {
 
